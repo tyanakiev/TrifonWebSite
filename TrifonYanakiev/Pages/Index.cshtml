@@ -3,171 +3,120 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<nav id="navbar-example2" class="navbar navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#"></a>
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link" href="#Home">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#one">one</a>
-                <a class="dropdown-item" href="#two">two</a>
-                <div role="separator" class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#three">three</a>
+
+<div data-spy="scroll" data-target="#navbar" data-offset="0">
+    <div id="About" class="container-fluid">
+        <h1>About me</h1>
+        <div class="row">
+            <div class="col-md-2 text-center offset-4">
+                <img src="~/images/trifon.jpg" class="my-photo" alt="Trifon">
             </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#Contacts">Contacts</a>
-        </li>
-    </ul>
-</nav>
-<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-    <h4 id="Home">Home</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <h4 id="About">About</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <h4 id="Skills">Skills</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <h4 id="one">one</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <h4 id="two">two</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <h4 id="three">three</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <h4 id="Contacts">Contacts</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    
+        </div>
+        <div class="row">
+            <div class="col-md-11 text-center">
+                <h2 class="mt-1">Trifon Yanakiev</h2>
+                <p class="my-info-text mt-3">
+                    Green Bay, WI 54313. &nbsp;|&nbsp; <a href="mailto:trifon.yanakiev@gmail.com">trifon.yanakiev@gmail.com</a>
+                </p>
+                <p class="my-info-summary">
+                    Quick-learning software enthusiast with 5 years of experience in computer science, programming, database design and administration.
+                    Strong problem-solving skills. Skilled but not limited to: Python, C#, .NET, Java and managing a SQL database.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="Experience" class="container-fluid">
+        <h1>Experience</h1>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+    </div>
+    <div id="Education" class="container-fluid">
+        <h1>Education</h1>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+    </div>
+    <div id="Projects" class="container-fluid">
+        <h1>Projects</h1>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+    </div>
+    <div id="Contacts" class="container-fluid">
+        <h1>Contacts</h1>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+        <p>. </p>
+    </div>
+
 </div>
