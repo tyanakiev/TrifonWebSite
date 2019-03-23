@@ -6,36 +6,27 @@ html, body {
 #About {
     padding-top: 50px;
     height: 100%;
-    color: #fff;
 }
 
 #Experience {
     padding-top: 50px;
     height: 100%;
-    color: #fff;
-    background-color: #ff9800;
 }
 
 #Education {
     padding-top: 50px;
     height: 100%;
-    color: #fff;
-    background-color: #ff6a00;
 }
 
 
 #Projects {
     padding-top: 50px;
     height: 100%;
-    color: #fff;
-    background-color: #00bcd4;
 }
 
 #Contacts {
     padding-top: 50px;
     height: 100%;
-    color: #fff;
-    background-color: #009688;
 }
 
 .my-photo{
@@ -56,4 +47,17 @@ html, body {
     line-height: 1.4;
     color: dimgray;
     font-size: 1.4rem;
+}
+
+.card {
+    transition: transform .2s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.headline{
+    color: #ffffff;
+}
+.projects{
+    margin-top: 20px;
 }
