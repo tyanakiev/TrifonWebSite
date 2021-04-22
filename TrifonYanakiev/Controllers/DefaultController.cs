@@ -14,6 +14,11 @@ namespace TrifonYanakiev.Controllers
         {
             return View();
         }
-        
+
+        [Route("error/{code:int}")]
+        public IActionResult Error(int code)
+        {
+            return View("Error");
+        }
     }
 }

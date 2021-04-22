@@ -51,7 +51,7 @@ namespace TrifonYanakiev
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseStatusCodePagesWithReExecute("/error/{0}");
             app.UseMvc();
         }
     }
