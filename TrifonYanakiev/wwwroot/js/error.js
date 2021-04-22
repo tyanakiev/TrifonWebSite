@@ -7,6 +7,9 @@
         setTimeout(function () {
             $('#redurect_seconds').text(i);
             console.log(i)
+            if (i == 1) {
+                $('#seconds_span').text("second")
+            }
             i--;
             if (i == 0) {
                 $(location).attr("href", "/");
@@ -15,5 +18,4 @@
         }, 1000)
     }
     recursive();
-    
 })
